@@ -1,0 +1,34 @@
+title: 
+description: test
+plugins:
+baseurl: ""
+markdown: kramdown
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  startings: [head, body]
+exclude:
+  - package.json
+  - node_modules
+  - helper
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+# collections_dir: mycollections
+collections:
+  products:
+    output: true
+    permalink: /san-pham/:path.html
+  pages:
+    output: true
+    permalink: :path.html

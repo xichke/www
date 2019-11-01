@@ -1,0 +1,36 @@
+<div class="view-wrapper">
+    <div class="columns is-multiline no-margin">
+        <div class="column is-paddingless">
+            <div class="cover-bg">
+                <a href="/">
+                    <img class="cover-image" src="https://picsum.photos/id/109/1600/460" alt="">
+                </a>
+                <div class="avatar">
+                    <a href="/">
+                        <img id="user-avatar" class="avatar-image" src="/assets/photos/xichke.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="profile-menu is-hidden-mobile">
+                <div class="menu-start">
+                    {% for i in left %}
+                    <a href="{{i.url}}" class="button has-min-width">{{i.name}}</a>
+                    {% endfor %}
+                </div>
+                <div class="menu-end">
+                    {% for i in right %}
+                    <a href="{{i.url}}" class="button has-min-width">{{i.name}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="profile-subheader">
+                <div class="subheader-middle">
+                    <a href="/">
+                        <h2 class="red">{{config.name}}</h2>
+                    </a>
+                    <span class="red">{{config.slogan}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
