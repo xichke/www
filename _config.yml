@@ -1,0 +1,22 @@
+title: 
+description: test
+plugins:
+baseurl: ""
+markdown: kramdown
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  startings: [head, body]
+exclude:
+  - package.json
+  - node_modules
+  - helper
+collections:
+  products:
+    output: true
+    permalink: /san-pham/:path/
+  products:
+    output: true
+    permalink: /chia-se/:path/
