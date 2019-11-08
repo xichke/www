@@ -13,10 +13,21 @@ exclude:
   - package.json
   - node_modules
   - helper
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+
 collections:
   products:
     output: true
-    permalink: /san-pham/:path/
-  products:
+    permalink: /san-pham/:path.html
+  pages:
     output: true
-    permalink: /chia-se/:path/
+    permalink: :path.html
