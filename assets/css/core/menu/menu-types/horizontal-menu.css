@@ -94,10 +94,10 @@
 }
 
 .horizontal-menu .header-navbar.navbar-brand-center .navbar-header .navbar-brand .brand-logo {
-  background: url("../../../../images/logo/logo-light.png") no-repeat;
+  background: url("/assets/images/xk.png") no-repeat;
   background-size: cover;
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 96px;
 }
 
 .horizontal-menu .header-navbar.navbar-brand-center .navbar-header .navbar-brand .brand-text {

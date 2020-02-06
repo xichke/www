@@ -15,7 +15,7 @@ fb_admins:
     - trangsinh
 fb_page: https://www.facebook.com/xichkedotcom
 youtube_channel: https://www.youtube.com/xichke
-phone: 0911779917
+phone: 0944200387
 address: Biên Hoà Đồng Nai
 
 menu:
@@ -40,13 +40,13 @@ menu:
 assets:
   css:
     - vendors/css/vendors.min.css
-    - css/bootstrap.min.css
-    - css/bootstrap-extended.min.css
-    - css/colors.min.css
-    - css/components.min.css
-    - css/themes/dark-layout.min.css
-    - css/themes/semi-dark-layout.min.css
-    - css/core/menu/menu-types/horizontal-menu.min.css
+    - css/bootstrap.css
+    - css/bootstrap-extended.css
+    - css/colors.css
+    - css/components.css
+    - css/themes/dark-layout.css
+    - css/themes/semi-dark-layout.css
+    - css/core/menu/menu-types/horizontal-menu.css
     - css/style.css
   js:
     - vendors/js/vendors.min.js
@@ -55,8 +55,8 @@ assets:
     - fonts/LivIconsEvo/js/LivIconsEvo.min.js
     - vendors/js/ui/jquery.sticky.js
     - js/scripts/configs/horizontal-menu.min.js
-    - js/core/app-menu.min.js
-    - js/core/app.min.js
+    - js/core/app-menu.js
+    - js/core/app.js
     - js/scripts/components.min.js
     - js/scripts/footer.min.js
     - js/scripts/customizer.min.js

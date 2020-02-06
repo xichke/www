@@ -3,8 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="horizontal-layout horizontal-menu navbar-sticky 2-columns   footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
-    {% include menu.html %}
+{% assign config = site.data.config %}
+<body class="horizontal-layout horizontal-menu 2-columns footer-static menu-expanded pace-done navbar-sticky" data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
+    {% include nav.html %}
     {{ content }}
+    {% include footer.html %}
     {% include js.html %}
 </body>
