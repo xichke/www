@@ -21,22 +21,22 @@ address: Biên Hoà Đồng Nai
 menu:
   - name: Bổn Bang
     url: /bon-bang
-    icon: star
+    icon: bx bx-share-alt
   - name: Chăm Sóc
     url: /cham-soc
-    icon: heartbeat
+    icon: bx bx-share-alt
   - name: Sản Phẩm
     url: /san-pham
-    icon: cart-plus
+    icon: bx bx-share-alt
   - name: Trang Trại
     url: /trang-trai
-    icon: tractor
+    icon: bx bx-share-alt
   - name: Liên Hệ
     url: /lien-he
-    icon: phone-volume
+    icon: bx bx-share-alt
   - name: Chia Sẻ
     url: /chia-se
-    icon: blog
+    icon: bx bx-share-alt
 assets:
   css:
     - vendors/css/vendors.min.css
@@ -50,13 +50,9 @@ assets:
     - css/style.css
   js:
     - vendors/js/vendors.min.js
-    - fonts/LivIconsEvo/js/LivIconsEvo.tools.min.js
-    - fonts/LivIconsEvo/js/LivIconsEvo.defaults.min.js
-    - fonts/LivIconsEvo/js/LivIconsEvo.min.js
     - vendors/js/ui/jquery.sticky.js
     - js/scripts/configs/horizontal-menu.min.js
     - js/core/app-menu.js
     - js/core/app.js
     - js/scripts/components.min.js
     - js/scripts/footer.min.js
-    - js/scripts/customizer.min.js

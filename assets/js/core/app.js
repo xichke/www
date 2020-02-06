@@ -37,44 +37,44 @@
     $.app.menu.init(compactMenu)
 
     // Livioncs are initialized for vertical menu
-    $.each($(".menu-livicon"), function (i) {
-      var $this = $(this),
-        icon = $this.data("icon"),
-        iconStyle = $("#main-menu-navigation").data("icon-style")
+    // $.each($(".menu-livicon"), function (i) {
+    //   var $this = $(this),
+    //     icon = $this.data("icon"),
+    //     iconStyle = $("#main-menu-navigation").data("icon-style")
 
-      $this.addLiviconEvo({
-        name: icon,
-        style: iconStyle,
-        duration: 0.85,
-        strokeWidth: "1.3px",
-        eventOn: "none",
-        strokeColor: menuIconColorsObj.iconStrokeColor,
-        solidColor: menuIconColorsObj.iconSolidColor,
-        fillColor: menuIconColorsObj.iconFillColor,
-        strokeColorAlt: menuIconColorsObj.iconStrokeColorAlt,
-        afterAdd: function () {
-          if (i === $(".main-menu-content .menu-livicon").length - 1) {
-            // When hover over any menu item, start animation and stop all other animation
-            $(".main-menu-content .nav-item a").on("mouseenter", function () {
-              if ($(".main-menu-content .menu-livicon").length) {
-                $(".main-menu-content .menu-livicon").stopLiviconEvo()
-                $(this)
-                  .find(".menu-livicon")
-                  .playLiviconEvo()
-              }
-            })
-          }
-        }
-      })
-    })
+    //   $this.addLiviconEvo({
+    //     name: icon,
+    //     style: iconStyle,
+    //     duration: 0.85,
+    //     strokeWidth: "1.3px",
+    //     eventOn: "none",
+    //     strokeColor: menuIconColorsObj.iconStrokeColor,
+    //     solidColor: menuIconColorsObj.iconSolidColor,
+    //     fillColor: menuIconColorsObj.iconFillColor,
+    //     strokeColorAlt: menuIconColorsObj.iconStrokeColorAlt,
+    //     afterAdd: function () {
+    //       if (i === $(".main-menu-content .menu-livicon").length - 1) {
+    //         // When hover over any menu item, start animation and stop all other animation
+    //         $(".main-menu-content .nav-item a").on("mouseenter", function () {
+    //           if ($(".main-menu-content .menu-livicon").length) {
+    //             $(".main-menu-content .menu-livicon").stopLiviconEvo()
+    //             $(this)
+    //               .find(".menu-livicon")
+    //               .playLiviconEvo()
+    //           }
+    //         })
+    //       }
+    //     }
+    //   })
+    // })
 
     function updateLivicon(el) {
-      el.updateLiviconEvo({
-        strokeColor: menuActiveIconColorsObj.iconStrokeColor,
-        solidColor: menuActiveIconColorsObj.iconSolidColor,
-        fillColor: menuActiveIconColorsObj.iconFillColor,
-        strokeColorAlt: menuActiveIconColorsObj.iconStrokeColorAlt
-      })
+      // el.updateLiviconEvo({
+      //   strokeColor: menuActiveIconColorsObj.iconStrokeColor,
+      //   solidColor: menuActiveIconColorsObj.iconSolidColor,
+      //   fillColor: menuActiveIconColorsObj.iconFillColor,
+      //   strokeColorAlt: menuActiveIconColorsObj.iconStrokeColorAlt
+      // })
     }
 
     // Navigation configurations
