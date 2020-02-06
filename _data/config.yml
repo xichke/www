@@ -21,19 +21,19 @@ address: Biên Hoà Đồng Nai
 menu:
   - name: Bổn Bang
     url: /bon-bang
-    icon: bx bx-share-alt
+    icon: bx bx-star
   - name: Chăm Sóc
     url: /cham-soc
-    icon: bx bx-share-alt
+    icon: bx bx-first-aid
   - name: Sản Phẩm
     url: /san-pham
-    icon: bx bx-share-alt
+    icon: bx bxs-cart
   - name: Trang Trại
     url: /trang-trai
-    icon: bx bx-share-alt
+    icon: bx bx-trophy
   - name: Liên Hệ
     url: /lien-he
-    icon: bx bx-share-alt
+    icon: bx bx-phone-call
   - name: Chia Sẻ
     url: /chia-se
     icon: bx bx-share-alt
