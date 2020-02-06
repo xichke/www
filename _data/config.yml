@@ -37,3 +37,26 @@ menu:
   - name: Chia Sẻ
     url: /chia-se
     icon: blog
+assets:
+  css:
+    - vendors/css/vendors.min.css
+    - css/bootstrap.min.css
+    - css/bootstrap-extended.min.css
+    - css/colors.min.css
+    - css/components.min.css
+    - css/themes/dark-layout.min.css
+    - css/themes/semi-dark-layout.min.css
+    - css/core/menu/menu-types/horizontal-menu.min.css
+    - css/style.css
+  js:
+    - vendors/js/vendors.min.js
+    - fonts/LivIconsEvo/js/LivIconsEvo.tools.min.js
+    - fonts/LivIconsEvo/js/LivIconsEvo.defaults.min.js
+    - fonts/LivIconsEvo/js/LivIconsEvo.min.js
+    - vendors/js/ui/jquery.sticky.js
+    - js/scripts/configs/horizontal-menu.min.js
+    - js/core/app-menu.min.js
+    - js/core/app.min.js
+    - js/scripts/components.min.js
+    - js/scripts/footer.min.js
+    - js/scripts/customizer.min.js
