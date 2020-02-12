@@ -6,6 +6,37 @@ title: Trại gà Xích Kê
     <div class="content-overlay"></div>
     <div class="content-wrapper">
         <div class="content-body">
+            <section>
+                <div class="row match-height">
+                    <div class="col-12">
+                        <div class="card-deck-wrapper">
+                            <div class="card-deck">
+                                <div class="row no-gutters">
+                                    {% for post in site.posts %}
+                                    <div class="col-md-3 col-sm-6 mb-sm-1">
+                                        <div class="card" style="height: 428.531px;">
+                                            <div class="card-content">
+                                                <a href="{{post.url}}">
+                                                <img class="card-img-top img-fluid" src="/assets/images/slider/01.jpg" alt="Card image cap"/>
+                                            </a>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">{{post.title}}</h4>
+                                                    <p class="card-text">
+                                                        {{post.excerpt}}
+                                                    </p>
+                                                    <small class="text-muted">{{post.date}}</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="content-types">
                 <div class="row">
                     <div class="col-xl-4 col-md-6 col-sm-12">
