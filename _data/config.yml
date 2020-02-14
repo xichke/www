@@ -47,7 +47,7 @@ assets:
     - css/themes/dark-layout.css
     - css/themes/semi-dark-layout.css
     - css/core/menu/menu-types/horizontal-menu.css
-    - css/style.css
+    - css/site.css
   js:
     - vendors/js/vendors.min.js
     - vendors/js/ui/jquery.sticky.js
