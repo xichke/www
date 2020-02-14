@@ -47,6 +47,7 @@ assets:
     - css/themes/dark-layout.css
     - css/themes/semi-dark-layout.css
     - css/core/menu/menu-types/horizontal-menu.css
+    - css/slick.css
     - css/site.css
   js:
     - vendors/js/vendors.min.js
@@ -56,3 +57,5 @@ assets:
     - js/core/app.js
     - js/scripts/components.min.js
     - js/scripts/footer.min.js
+    - js/slick.js
+    - js/site.js

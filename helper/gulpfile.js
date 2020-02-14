@@ -18,13 +18,17 @@ const {
 	clean = require('gulp-clean');
 
 task('img', (done) => {
-	src('assets/photos/**')
-		.pipe(imagemin({
-			optimizationLevel: 3,
-			progressive: true,
-			interlaced: true
-		}))
-		.pipe(dest('assets/photos'))
+	src('../assets/photos/**')
+		.pipe(imagemin([
+			imagemin.mozjpeg({
+				quality: 60,
+				progressive: true
+			}),
+			imagemin.optipng({
+				optimizationLevel: 5
+			})
+		]))
+		.pipe(dest('../assets/photos'))
 		.on('end', done);
 });
 
