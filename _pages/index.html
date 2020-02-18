@@ -19,40 +19,36 @@ title: Trại gà Xích Kê
                         <div class="tab-pane active" id="feed" aria-labelledby="feed-tab" role="tabpanel">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <!-- user profile nav tabs feed left section info card start -->
                                     <div class="card">
                                         <div class="card-content">
                                             <div class="card-body">
-                                                <h5 class="card-title mb-1">Info
-                                                    <i class="cursor-pointer bx bx-dots-vertical-rounded float-right"></i>
+                                                <h5 class="card-title mb-1">Trại Gà Xích Kê
                                                 </h5>
                                                 <ul class="list-unstyled mb-0">
                                                     <li class="d-flex align-items-center mb-25">
-                                                        <i class="bx bxl-facebook mr-50 cursor-pointer"></i><span>UX
-                                                            Designer at<a href="JavaScript:void(0);">&nbsp;google</a></span>
+                                                        <i class="bx bxl-facebook mr-50 cursor-pointer"></i>
+                                                        <span><a href="{{config.fb_page}}">&nbsp;{{config.fb_page | remove: "https://"}}</a> </span>
                                                     </li>
                                                     <li class="d-flex align-items-center mb-25">
-                                                        <i class="bx bx-briefcase mr-50 cursor-pointer"></i> <span>Former
-                                                            UI
-                                                            Designer at<a href="JavaScript:void(0);">&nbsp;CBI</a></span>
-                                                    </li>
-                                                    <li class="d-flex align-items-center mb-25">
-                                                        <i class="bx bx-receipt mr-50 cursor-pointer"></i> <span>Studied
-                                                            <a href="JavaScript:void(0);">&nbsp;IT science</a> at<a href="JavaScript:void(0);">&nbsp;Torronto</a></span>
-                                                    </li>
-                                                    <li class="d-flex align-items-center mb-25">
-                                                        <i class="bx bx-receipt mr-50 cursor-pointer"></i><span>Studied at
-                                                            <a href="JavaScript:void(0);">&nbsp;College of new Jersey</a></span>
-                                                    </li>
-                                                    <li class="d-flex align-items-center">
-                                                        <i class="bx bx-rss mr-50 cursor-pointer"></i> <span>Followed by<a href="JavaScript:void(0);">&nbsp;338 people</a></span>
+                                                        <i class="bx bxl-youtube mr-50 cursor-pointer"></i>
+                                                        <span><a href="{{config.youtube_channel}}">&nbsp;{{config.youtube_channel | remove: "https://"}}</a> </span>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- user profile nav tabs feed left section info card ends -->
-                                    <!-- user profile nav tabs feed left section trending card start -->
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="card-body no-padding">
+                                                <div class="fb-page" 
+                                                  data-href="{{config.fb_page}}"
+                                                  data-width="" 
+                                                  data-hide-cover="false"
+                                                  data-tabs=""
+                                                  data-show-facepile="true"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card">
                                         <div class="card-content">
                                             <div class="card-body">
@@ -84,8 +80,6 @@ title: Trại gà Xích Kê
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- user profile nav tabs feed left section trending card ends -->
-                                    <!-- user profile nav tabs feed left section like page card start -->
                                     <div class="card">
                                         <div class="card-content">
                                             <div class="card-body">
@@ -107,8 +101,6 @@ title: Trại gà Xích Kê
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- user profile nav tabs feed left section like page card ends -->
-                                    <!-- user profile nav tabs feed left section today's events card start -->
                                     <div class="card">
                                         <div class="card-content">
                                             <div class="card-body">
@@ -172,8 +164,8 @@ title: Trại gà Xích Kê
                                     <div class="card">
                                         <div class="card-content">
                                             <a href="{{post.url}}">
-                                            <img class="card-img-top img-fluid" src="{{post.image}}" alt="Card image cap"/>
-                                        </a>
+                                                <img class="card-img-top img-fluid" src="{{post.image}}" alt="Card image cap" />
+                                            </a>
                                             <div class="card-body">
                                                 <h4 class="card-title">{{post.title}}</h4>
                                                 <p class="card-text">
