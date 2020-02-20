@@ -3,6 +3,7 @@ description: test
 plugins:
 baseurl: ""
 markdown: kramdown
+permalink: /:categories/:title.html
 compress_html:
   clippings: all
   comments: all

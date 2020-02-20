@@ -2,7 +2,7 @@
 title: Trại gà Xích Kê
 ---
 {% assign config = site.data.config %}
-<section class="page-user-profile">
+<section>
     <div class="row">
         <div class="col-12">
             <div class="card">
@@ -13,6 +13,42 @@ title: Trại gà Xích Kê
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<section id="decks">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card-deck-wrapper">
+                <div class="card-deck">
+                    <div class="row no-gutters">
+                        {% for post in site.categories.cac-dong-ga %}
+                        <div class="col-md-3 col-sm-6 mb-sm-1">
+                            <div class="card">
+                                <div class="card-content">
+                                    <a href="{{post.url}}">
+                                        <img class="card-img-top img-fluid" src="{{post.image}}" alt="Card image cap" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">{{post.title}}</h4>
+                                        <p class="card-text">
+                                            {{post.excerpt}}
+                                        </p>
+                                        <small class="text-muted">{{post.date}}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row">
+        <div class="col-12">
             <div class="row">
                 <div class="col-lg-9">
                     <div class="tab-content">
@@ -33,19 +69,11 @@ title: Trại gà Xích Kê
                                                         <i class="bx bxl-youtube mr-50 cursor-pointer"></i>
                                                         <span><a href="{{config.youtube_channel}}">&nbsp;{{config.youtube_channel | remove: "https://"}}</a> </span>
                                                     </li>
+                                                    <li class="d-flex align-items-center mb-25">
+                                                        <i class="bx bx-phone-call mr-50 cursor-pointer"></i>
+                                                        <span><a href="tel:{{config.phone}}">&nbsp;{{config.phone}}</a> </span>
+                                                    </li>
                                                 </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <div class="card-body no-padding">
-                                                <div class="fb-page" 
-                                                  data-href="{{config.fb_page}}"
-                                                  data-width="" 
-                                                  data-hide-cover="false"
-                                                  data-tabs=""
-                                                  data-show-facepile="true"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -182,6 +210,13 @@ title: Trại gà Xích Kê
                     </div>
                 </div>
                 <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body no-padding">
+                                <div class="fb-page" data-href="{{config.fb_page}}" data-width="" data-hide-cover="false" data-tabs="" data-show-facepile="true"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="card-content">
                             <div class="card-body">

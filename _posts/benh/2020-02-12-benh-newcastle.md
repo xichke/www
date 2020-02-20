@@ -1,9 +1,9 @@
 ---
 layout: default
 title:  "Bệnh Newcastle"
-categories: nuoi-ga
+categories: benh-tren-ga
 permalink: /:categories/:title.html
-image: /assets/photos/cac-dong-ga/penny-hatch/xich-ke-penny-hatch-01.jpg
+image: /assets/photos/benh/newcastle.jpg
 ---
 
 # newcastle
