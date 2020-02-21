@@ -85,10 +85,14 @@ title: Trại gà Xích Kê
                                                         <i class="bx bxl-youtube mr-50 cursor-pointer"></i>
                                                         <span><a href="{{config.youtube_channel}}">&nbsp;{{config.youtube_channel | remove: "https://"}}</a> </span>
                                                     </li>
+                                                    {%for item in config.phone %}
                                                     <li class="d-flex align-items-center mb-25">
                                                         <i class="bx bx-phone-call mr-50 cursor-pointer"></i>
-                                                        <span><a href="tel:{{config.phone}}">&nbsp;{{config.phone}}</a> </span>
+                                                        <span>
+                                                            <a href="tel:{{item}}">&nbsp;{{item}}</a>
+                                                        </span>
                                                     </li>
+                                                    {%endfor%}
                                                 </ul>
                                             </div>
                                         </div>

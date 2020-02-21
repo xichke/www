@@ -15,7 +15,9 @@ fb_admins:
     - trangsinh
 fb_page: https://facebook.com/xichkedotcom
 youtube_channel: https://youtube.com/xichke
-phone: 0944200387
+phone: 
+  - 0944200387
+  - 0911779917
 address: Biên Hoà Đồng Nai
 
 menu:
@@ -31,12 +33,12 @@ menu:
   - name: Trang Trại
     url: /trang-trai
     icon: bx bx-trophy
-  - name: Liên Hệ
-    url: /lien-he
-    icon: bx bx-phone-call
   - name: Chia Sẻ
     url: /chia-se
     icon: bx bx-share-alt
+  - name: Liên Hệ
+    url: /lien-he.html
+    icon: bx bx-phone-call
 assets:
   css:
     - vendors/css/vendors.min.css

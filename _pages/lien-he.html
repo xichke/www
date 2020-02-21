@@ -1,6 +1,85 @@
 ---
-layout: default
-title: Kỹ thuật úm gà con giai đoạn 1 đến 4 tuần tuổi hiệu quả nhất
-permalink: /lien-he.html
+title: Thông tin liên hệ Trại Gà Xích Kê
 ---
-aaa
+{% assign config = site.data.config %}
+<section>
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="feed" aria-labelledby="feed-tab" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card bg-danger bg-lighten-2 white">
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-1 white">Trại Gà Xích Kê
+                                                </h5>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="d-flex align-items-center mb-25">
+                                                        <i class="bx bxl-facebook mr-50 cursor-pointer"></i>
+                                                        <span><a class="white" href="{{config.fb_page}}">&nbsp;{{config.fb_page | remove: "https://"}}</a> </span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-25">
+                                                        <i class="bx bxl-youtube mr-50 cursor-pointer"></i>
+                                                        <span>
+                                                            <a class="white" href="{{config.youtube_channel}}">&nbsp;{{config.youtube_channel | remove: "https://"}}</a>
+                                                        </span>
+                                                    </li>
+                                                    {%for item in config.phone %}
+                                                    <li class="d-flex align-items-center mb-25">
+                                                        <i class="bx bx-phone-call mr-50 cursor-pointer"></i>
+                                                        <span>
+                                                            <a class="white" href="tel:{{item}}">&nbsp;{{item}}</a>
+                                                        </span>
+                                                    </li>
+                                                    {%endfor%}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card text-center bg-danger bg-lighten-2">
+                                        <div class="card-content d-flex">
+                                            <div class="card-body">
+                                                <img src="/assets/images/icon/vcb.png" alt="element 06" height="100" class="mb-1">
+                                                <p class="card-text white font-medium-3 text-bold-700">Trần Trang Sinh <br />
+                                                    STK: 0071000985995<br />
+                                                    Ngân hàng Vietcombank chi nhánh tp HCM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <a href="{{post.url}}">
+                                                <img class="card-img-top img-fluid" src="{{post.image}}" alt="Card image cap" />
+                                            </a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">post.title</h4>
+                                                <p class="card-text">
+                                                    post.excerpt
+                                                </p>
+                                                <small class="text-muted">post.date</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body no-padding">
+                                <div class="fb-page" data-href="{{config.fb_page}}" data-width="" data-hide-cover="false" data-tabs="messages" data-show-facepile="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
